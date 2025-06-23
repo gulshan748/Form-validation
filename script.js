@@ -15,6 +15,11 @@
         btnElement.innerText = 'Show Password';
       }
     }
+    // this funtion will removes non-digits in phone number
+     $("#phonenumber").on("input", function () {
+    this.value = this.value.replace(/\D/g, ""); 
+    });
+
     //   This starts a reaction timer to track how long a user takes to fill and submit the form.
     $(document).ready(function () {
       startTimer();
