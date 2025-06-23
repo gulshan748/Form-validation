@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Form Validation System</title>
+
+ <!--I have included a jquery source code to perform its funtions smoothly -->
+ <script src="jquery.js"></script>
+ <!-- This code is linked to styles (cascading style sheet) for a good user interaction -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <!-- This onload attribute  is to capture the reaction  time  , which is functioned in javascript -->
+  <body onload="startTimer()">
+
+  <div class="container">
+
+
+    <h2>Form Validation</h2>
+    <form id="myForm">
+      <label for="name">Name</label>
+      <input type="text" id="name" name="name" placeholder="e.g. Rahul Sharma" autocomplete="name" />
+
+      <label for="email">Email</label>
+      <input type="text" id="email" name="email" placeholder="e.g. user@example.com" />
+
+      <label for="message">Message</label>
+      <textarea id="message" name="message" rows="4" placeholder="Type your message here..."></textarea>
+
+      <label for="phonenumber">Phone Number</label>
+      <input type="text" name="phonenumber" id="phonenumber" placeholder="e.g. 9876543210" />
+
+      <label for="password">Password</label>
+      <div class="password-wrapper">
+        <input type="password" name="password" id="password" placeholder="Min 8 chars with A-Z, a-z, 0-9" />
+        <div class="show-password-box" onclick="togglePassword('password', this)">Show Password</div>
+      </div>
+
+      <label for="confirmpassword">Confirm Password</label>
+      <div class="password-wrapper">
+        <input type="password" name="confirmpassword" id="confirmpassword" placeholder="Re-enter your password" />
+        <div class="show-password-box" onclick="togglePassword('confirmpassword', this)">Show Password</div>
+      </div>
+
+      <button id="submitbutton" type="submit">Submit</button>
+    </form>
+    <div id="messageBox"></div>
+    <p id="reactionTime"></p>
+  </div>
+  <!-- This will link Java script to this html -->
+  <script src="script.js">
+ 
+  </script>
+</body>
+</html>
