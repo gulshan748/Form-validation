@@ -1,0 +1,104 @@
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f0f4f8;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .container {
+      background-color: white;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      width: 100%;
+      max-width: 400px;
+    }
+
+    h2 {
+      margin-bottom: 20px;
+      font-size: 24px;
+      color: #333;
+      text-align: center;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 5px;
+      font-size: 16px;
+      color: #333;
+    }
+
+    input,
+    textarea {
+      width: 100%;
+      padding: 10px;
+      font-size: 16px;
+      border: 1px solid black;
+      border-radius: 5px;
+      margin-bottom: 10px;
+      box-sizing: border-box;
+    }
+
+    .password-wrapper {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .show-password-box {
+      padding: 5px 10px;
+      font-size: 12px;
+      background-color: #eee;
+      border: 1px solid #aaa;
+      border-radius: 5px;
+      cursor: pointer;
+      user-select: none;
+    }
+
+    button {
+      background-color: #007bff;
+      color: white;
+      border: none;
+      padding: 12px;
+      font-size: 16px;
+      border-radius: 5px;
+      width: 100%;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #0056b3;
+    }
+
+    #messageBox {
+      margin-top: 15px;
+      padding: 10px;
+      border-radius: 5px;
+      font-size: 15px;
+      white-space: pre-line;
+      display: none;
+    }
+
+    .error {
+      display: block;
+      background-color: #f8d7da;
+      color: #842029;
+      border: 1px solid #f5c2c7;
+      padding: 10px;
+      border-radius: 5px;
+      margin-top: 15px;
+    }
+
+    .success {
+      display: block;
+      background-color: #d1e7dd;
+      color: #0f5132;
+      border: 1px solid #badbcc;
+      padding: 10px;
+      border-radius: 5px;
+      margin-top: 15px;
+    }
